@@ -370,6 +370,10 @@ TwilioVoice.getCallInvite()
 
 // Unregister device with Twilio (iOS only)
 TwilioVoice.unregister()
+
+// Sets Twilio Voice edge location.
+// See [https://www.twilio.com/docs/voice/client/edges] for more information.
+TwilioVoice.setEdge(location)
 ```
 
 ## Help wanted

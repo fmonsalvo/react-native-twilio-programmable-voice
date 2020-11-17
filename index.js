@@ -80,6 +80,7 @@ const Twilio = {
     },
     getActiveCall: TwilioVoice.getActiveCall,
     getCallInvite: TwilioVoice.getCallInvite,
+    setEdge: TwilioVoice.setEdge,
     configureCallKit(params = {}) {
         if (Platform.OS === IOS) {
             TwilioVoice.configureCallKit(params)

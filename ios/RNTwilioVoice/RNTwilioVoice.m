@@ -203,6 +203,14 @@ RCT_REMAP_METHOD(getCallInvite,
     resolve(params);
 }
 
+RCT_EXPORT_METHOD(setEdge: (NSString *)location) {
+  if (location != nil) {
+    NSLog(@"Set Edge Location %@", location);
+    [TwilioVoice setEdge:location];
+  }
+}
+
+
 - (void)initPushRegistry {
   self.voipRegistry = [[PKPushRegistry alloc] initWithQueue:dispatch_get_main_queue()];
   self.voipRegistry.delegate = self;
